@@ -2,16 +2,17 @@
 
 class PrinterModel:
 
-    def __init__(self, name, code, bytes_per_row):
+    def __init__(self, name, code, bytes_per_row, offset_right_adjust=0):
         self.name = name
         self.code = code
         self.bytes_per_row = bytes_per_row
+        self.offset_right_adjust = offset_right_adjust
 
 
 
 
 _ALL_MODELS = [
-    PrinterModel("QL-1100", "4C", bytes_per_row=162),
+    PrinterModel("QL-1100", "4C", bytes_per_row=162, offset_right_adjust=44),
 ]
 
 
